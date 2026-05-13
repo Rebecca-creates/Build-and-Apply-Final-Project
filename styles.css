@@ -464,6 +464,7 @@ img {
 .plans {
   display: flex;
   flex-wrap: wrap;
+  padding-top: 48px;
 }
 
 .plan {
@@ -591,11 +592,11 @@ img {
   align-items: center;
 }
 
-.testimonial__img--wrapper {
+.test__img--wrapper {
   width: 50%;
 }
 
-.testimonial__img {
+.test__img {
   width: 80px;
   height: 80px;
   border-radius: 50%;
