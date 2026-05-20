@@ -67,6 +67,13 @@ img {
   cursor: pointer;
 }
 
+.btn__menu {
+  background-color: transparent;
+  border: medium;
+  display: none;
+  transition: 300ms;
+}
+
 /* NAVBAR */
 
 .nav {
@@ -687,6 +694,11 @@ img {
   transition: 300ms;
 }
 
+.fa-arrow-right,
+.fa-arrow-left {
+  color: rgb(100, 21, 255);
+}
+
 /* START */
 
 .start__container {
@@ -833,23 +845,64 @@ footer {
 
 /* MEDIA */
 
-@media (max-width: 1280px) {
-  header .row {
-    align-items: flex-end;
-  }
-}
-
 @media (max-width: 1024px) {
   .btn__menu {
     display: block;
   }
+
   header .row {
     flex-direction: column;
     align-items: center;
   }
+
+  .header__description {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header__description,
+  .header__img--wrapper {
+    width: 100%;
+    max-width: 512px;
+    margin: 0px auto;
+  }
+
+  .header__customer--title,
+  .header__img--wrapper {
+    margin-top: 48px;
+  }
+  
+  .h1 {
+    font-size: 30px;
+  }
+
+  .header__description--para {
+    margin: 20px 0px;
+  }
+
+  #testimonials .container {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
   footer {
     padding: 80px 32px;
   }
+}
+
+@media (max-width: 1280px) {
+  .h1 {
+    font-size: 36px;
+    color: rgb(26, 32, 44);
+    line-height: 1.25;
+  }
+
+  header .row {
+    align-items: flex-end;
+  }
+
 }
 
 @media (max-width: 768px) {
@@ -860,7 +913,6 @@ footer {
   #steps .row,
   #testimonials .row {
     flex-direction: column;
-    align-items: center;
   }
   #pricing .row {
     margin-top: 40px;
@@ -885,22 +937,32 @@ footer {
   .container {
     padding: 80px 0;
   }
+
   .nav__logo {
     margin: 8px 0;
     padding-bottom: 4px;
   }
+
   main {
     margin-bottom: 80px;
   }
+
+  .header__email {
+    flex-direction: column;
+    height: auto;
+  }
+
   .footer__columns {
     justify-content: center;
   }
+
   .footer__column {
     width: auto;
     padding: 0 16px;
     text-align: center;
     align-items: center;
   }
+
   .footer__copyright {
     font-size: 14px;
     text-align: center;
