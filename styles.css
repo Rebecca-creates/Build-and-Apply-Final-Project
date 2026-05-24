@@ -850,7 +850,15 @@ footer {
     flex-direction: column;
   }
 
+  .nav__row {
+    flex-direction: row;
+  }
+  
   .nav__links {
+    display: none;
+  }
+
+  .btn__menu {
     display: none;
   }
 
