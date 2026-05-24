@@ -853,13 +853,13 @@ footer {
   .nav__row {
     flex-direction: row;
   }
-  
+
   .nav__links {
     display: none;
   }
 
   .btn__menu {
-    display: none;
+    display: block;
   }
 
   h1 {
