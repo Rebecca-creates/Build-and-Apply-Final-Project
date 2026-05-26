@@ -348,7 +348,6 @@ img {
   position: relative;
   margin: auto;
   display: flex;
-  height: 268px;
   width: 50%;
 }
 
@@ -562,6 +561,7 @@ img {
   font-weight: bold;
   color: rgb(160, 174, 192);
   line-height: 1.6;
+  margin-bottom: 24px;
 }
 
 .plan__middle {
@@ -585,6 +585,14 @@ img {
 .plan:nth-child(2) .plan__middle {
   border-top: 2px solid rgb(102, 126, 234);
   border-bottom: 2px solid rgb(102, 126, 234);
+}
+
+.plan:nth-child(2) .plan__name,
+.plan:nth-child(2) .plan__price,
+.plan:nth-child(2) .plan__duration,
+.plan:nth-child(2) .plan__target,
+.plan:nth-child(2) .plan__feature {
+  color: white;
 }
 
 .plan__target {
@@ -708,6 +716,7 @@ img {
   align-items: center;
   text-align: center;
   background-color: rgb(100, 21, 255);
+  border-radius: 8px;
 }
 
 .start__row {
@@ -721,6 +730,7 @@ img {
 .start__title {
   font-size: 32px;
   font-weight: 700;
+  text-align: left;;
   color: rgb(247, 250, 252);
   padding: 48px 0;
   width: 50%;
@@ -740,6 +750,7 @@ img {
 
 .start__button:nth-child(1) {
   background-color: #f56565;
+  margin-right: 16px;
 }
 
 .start__button:nth-child(2) {
@@ -848,6 +859,10 @@ footer {
 @media (max-width: 728px) {
   .row {
     flex-direction: column;
+  }
+
+  .container {
+    padding: 80px 0;
   }
 
   .nav__row {
@@ -988,6 +1003,13 @@ footer {
 
   .values__list {
     flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .value:nth-of-type(1) {
+    margin-right: 0px;
     align-items: center;
   }
 
