@@ -69,9 +69,10 @@ img {
 
 .btn__menu {
   background-color: transparent;
-  border: medium;
+  border: none;
   display: none;
-  transition: 300ms;
+  transition: all 300ms ease;
+  cursor: pointer;
 }
 
 /* NAVBAR */
@@ -730,7 +731,7 @@ img {
 .start__title {
   font-size: 32px;
   font-weight: 700;
-  text-align: left;;
+  text-align: left;
   color: rgb(247, 250, 252);
   padding: 48px 0;
   width: 50%;
@@ -883,9 +884,11 @@ footer {
   }
 
   .header__description {
+    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 80%;
   }
 
   .header__description--para {
@@ -915,10 +918,6 @@ footer {
   .header__customers {
     font-size: 14px;
     text-align: center;
-  }
-
-  .header__customer--img {
-    width: 200px;
   }
 
   .header__img--wrapper {
@@ -978,6 +977,7 @@ footer {
   .section__para {
     text-align: center;
     margin-top: 24px;
+    font-size: 14px;
   }
 
   #quality .btn {
@@ -1002,14 +1002,15 @@ footer {
   }
 
   .values__list {
+    display: flex;
     flex-direction: column;
     align-items: center;
-    margin-left: auto;
-    margin-right: auto;
+    text-align: center;
   }
 
-  .value:nth-of-type(1) {
-    margin-right: 0px;
+  .value {
+    display: flex;
+    flex-direction: column;
     align-items: center;
   }
 
