@@ -75,6 +75,10 @@ img {
   cursor: pointer;
 }
 
+.btn__menu:hover {
+    color: #6415ff;
+}
+
 /* NAVBAR */
 
 .nav {
