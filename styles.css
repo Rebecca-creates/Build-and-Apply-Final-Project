@@ -79,6 +79,25 @@ img {
     color: #6415ff;
 }
 
+.menu__backdrop {
+  position: absolute;
+  background-color: white;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  display: none;
+}
+
+.menu__open .menu__backdrop {
+  display: flex;
+}
+
+.bt__menu--close {
+  position: absolute;
+}
+
 /* NAVBAR */
 
 .nav {
