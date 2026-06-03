@@ -812,11 +812,14 @@ img {
 }
 
 /* START */
+#start {
+  padding: 80px 0;
+}
 
 .start__container {
   background-color: rgb(100, 21, 255);
   border-radius: 8px;
-  padding: 64px 48px;
+  padding: 48px 40px;
 }
 
 .start__row {
@@ -830,15 +833,15 @@ img {
   color: white;
   font-size: 32px;
   font-weight: 700;
-  width: 50%;
+  width: 55%;
   line-height: 1.5;
 }
 
 .start__buttons {
   display: flex;
   justify-content: flex-end;
-  align-items: center;
-  width: 50%;
+  width: 45%;
+  gap: 16px;
 }
 
 .start__button {
