@@ -37,8 +37,8 @@ p {
 }
 
 .section__para {
-  font-size: 16px;
-  color: rgb(124, 139, 161);
+  font-size: 18px;
+  color: #7c8ba1;
   font-weight: 500;
   line-height: 1.5;
   text-align: left;
@@ -140,7 +140,7 @@ img {
   cursor: pointer;
 }
 
-.btn__menu:hover {
+.btn__menu:hover i {
   color: #6415ff;
 }
 
@@ -358,6 +358,7 @@ img {
   flex-direction: column;
   justify-content: center;
   width: 50%;
+  margin-right: 64px;
 }
 
 .quality__img--wrapper {
@@ -366,6 +367,7 @@ img {
   position: relative;
   margin: 0 56px;
   display: flex;
+  width: 50%;
 }
 
 .quality__img {
@@ -415,9 +417,22 @@ img {
   width: 50%;
 }
 
+.steps__grid {
+  position: absolute;
+  bottom: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10rem;
+  height: 10rem;
+  opacity: 0.8;
+  z-index: -10;
+  color: rgb(100, 21, 255);
+  fill: currentColor;
+}
+
 .steps__description {
-  display: flex;
-  flex-direction: column;
+  padding: 32px 0;
+  padding-left: 64px;
   width: 50%;
 }
 
@@ -428,23 +443,22 @@ img {
 
 .step {
   display: flex;
-  margin-top: 32px;
   align-items: flex-start;
+  margin-top: 32px;
 }
 
 .step__description {
   display: flex;
   flex-direction: column;
+  margin-left: 24px;
   max-width: 320px;
 }
 
 .step__number {
-  display: flex;
   font-size: 36px;
   color: #cbd5e0;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 1;
-  margin: 0 24px;
 }
 
 .step__title {
@@ -465,7 +479,7 @@ img {
 
 .values__description {
   width: 50%;
-  padding: 32px 64px 32px 24px;
+  padding: 32px 64px 32px 0px;
 }
 
 .values__img {
@@ -508,13 +522,30 @@ img {
   gap: 12px;
 }
 
+.value__name {
+  margin-left: 12px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #243e63;
+}
+
 .value__para {
-  font-size: 16px;
+  margin-top: 16px;
   color: #718096;
-  font-weight: 500;
-  line-height: 1.5;
-  text-align: left;
-  padding: 24px;
+  line-height: 1.625;
+}
+
+.value:nth-of-type(1) {
+  margin-top: 32px;
+  margin-right: 32px;
+}
+
+.value:nth-of-type(2) {
+  margin-top: 32px;
+}
+
+#values .btn {
+  margin-top: 48px;
 }
 
 /* PRICING */
@@ -679,7 +710,7 @@ img {
   border-radius: 500px;
   border: none;
   padding: 16px 32px;
-  transition: 300ms;
+  transition: all 300ms ease;
   width: 100%;
 }
 
@@ -776,7 +807,6 @@ img {
 .start__container {
   width: 100%;
   display: flex;
-  flex-direction: column;
   align-items: center;
   text-align: center;
   background-color: rgb(100, 21, 255);
@@ -789,6 +819,7 @@ img {
   align-items: center;
   justify-content: center;
   padding: 0 32px;
+  margin: 0 auto;
 }
 
 .start__title {
