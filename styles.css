@@ -67,6 +67,10 @@ img {
   cursor: pointer;
 }
 
+.btn:hover {
+  background-color: rgb(68, 12, 180);
+}
+
 /* NAVBAR */
 
 .nav {
@@ -795,6 +799,11 @@ img {
   border: none;
   margin: 0px 12px;
   transition: 300ms;
+  cursor: pointer;
+}
+
+.testimonial__button:hover {
+  background-color: rgb(229, 231, 235);
 }
 
 .fa-arrow-right,
