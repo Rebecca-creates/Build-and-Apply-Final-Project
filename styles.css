@@ -1167,30 +1167,19 @@ footer {
     align-items: center;
     padding-top: 4px;
   }
-
   .start__row {
     flex-direction: column;
+    text-align: center;
   }
 
   .start__title {
-    align-items: center;
-    text-align: center;
-    font-size: 24px;
     width: 100%;
+    font-size: 24px;
   }
 
   .start__buttons {
-    flex-direction: column;
-    width: auto;
-  }
-
-  .start__button:nth-child(1) {
-    margin-right: 0px;
-  }
-
-  .start__button:nth-child(2) {
-    margin-top: 16px;
-    margin-bottom: 32px;
+    width: 100%;
+    justify-content: center;
   }
 
   .footer__columns {
